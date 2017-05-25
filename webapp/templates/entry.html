@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+<h2>{{ the_title }}</h2>
+
+<form method='POST' action='/省份知多少'>
+<table>
+<p>请输入省份:</p>
+<tr><td>省份:</td><td><input name='phrase' type='TEXT' width='80'></td></tr>
+<tr><td>互联网:</td><td><input name='letters' type='TEXT' value='北京天津黑龙江吉林辽宁河北河南山东山西陕西内蒙古宁夏甘肃新疆青海西藏湖北安徽江苏上海浙江福建湖南江西四川重庆贵州云南广东广西海南香港澳门台湾'></td></tr>
+</table>
+<p>准备好了吗:</p>
+<p><input value='搜寻!' type='SUBMIT'></p>
+</form>
+
+{% endblock %}
